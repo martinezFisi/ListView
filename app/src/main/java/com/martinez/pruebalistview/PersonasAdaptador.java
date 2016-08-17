@@ -10,15 +10,17 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
+import java.util.ArrayList;
+
 /**
  * Created by HP on 8/16/2016.
  */
 public class PersonasAdaptador extends ArrayAdapter<Persona>
 {
     //Constructor
-    public PersonasAdaptador( Context context, Persona personas[] )
+    public PersonasAdaptador(Context context, ArrayList<Persona> listaPersonas )
     {
-        super( context, R.layout.persona_list_item, personas );
+        super( context, R.layout.persona_list_item, listaPersonas );
     }
 
     //Metodo getView()
